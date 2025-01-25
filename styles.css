@@ -125,6 +125,43 @@ body {
     font-size: 0.9rem;
 }
 
+/* Section Headings */
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+/* About Me Section */
+.container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Blogs Section */
+.container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+.container ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.container ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
 .container {
     background-color: #282828;
     padding: 40px;
