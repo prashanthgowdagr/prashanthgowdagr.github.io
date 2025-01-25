@@ -28,9 +28,15 @@ header img.profile {
     position: absolute;
     top: 10px;
     right: 10px;
-    border-radius: 50%;
     width: 100px;
-    border: 4px solid var(--primary-color);
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+header img.profile:hover {
+    opacity: 0.7;
 }
 
 section {
@@ -41,7 +47,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section.projects, section.contact {
+section.projects {
     background: var(--primary-color);
     color: white;
 }
@@ -78,4 +84,21 @@ ul li a {
 
 ul li a:hover {
     color: var(--background-color);
+}
+
+.contact-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: var(--link-color);
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
