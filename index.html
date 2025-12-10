@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Prashanth Gowda G R | Cloud & DevOps Engineer</title>
+  <title>Prashanth Gowda G R | Site Reliability & DevOps Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-        content="Portfolio of Prashanth Gowda G R — Cloud & DevOps Engineer specializing in AWS, Azure, Kubernetes, GitLab, Terraform, and modern CI/CD." />
+        content="Portfolio of Prashanth Gowda G R — Site Reliability & DevOps Engineer automating cloud infrastructure on AWS & Azure with Kubernetes, Terraform, GitLab CI/CD, and modern monitoring." />
 
   <style>
     :root {
@@ -56,7 +56,7 @@
       }
     }
 
-    /* Top nav (Gamma-like minimal header) */
+    /* Top nav */
     .top-nav {
       position: sticky;
       top: 0;
@@ -73,7 +73,7 @@
       border: 1px solid rgba(148, 163, 184, 0.45);
       padding: 0.4rem 0.9rem;
       margin: 0 auto 1.2rem;
-      max-width: 640px;
+      max-width: 780px;
     }
 
     .top-nav-inner {
@@ -151,7 +151,14 @@
       transform: translateY(-1px);
     }
 
-    .nav-cta {
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .nav-cta,
+    .nav-ghost {
       padding: 0.4rem 0.95rem;
       border-radius: 999px;
       border: 1px solid rgba(56, 189, 248, 0.8);
@@ -171,6 +178,19 @@
       transform: translateY(-1px) scale(1.02);
       box-shadow: 0 16px 40px rgba(15, 23, 42, 0.85);
       filter: brightness(1.02);
+    }
+
+    .nav-ghost {
+      background: rgba(15, 23, 42, 0.02);
+      border-color: rgba(148, 163, 184, 0.7);
+      color: #e2e8f0;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.6);
+    }
+
+    .nav-ghost:hover {
+      background: rgba(15, 23, 42, 0.2);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.85);
     }
 
     /* Main layout cards */
@@ -706,13 +726,22 @@
           <div class="brand-logo-circle"><span></span></div>
           <span>Prashanth · Portfolio</span>
         </div>
+
         <nav class="nav-links">
           <a href="#experience" class="nav-link">Experience</a>
           <a href="#skills" class="nav-link">Skills</a>
           <a href="#projects" class="nav-link">Projects</a>
           <a href="#education" class="nav-link">Education</a>
         </nav>
-        <a href="#contact" class="nav-cta">Let’s connect</a>
+
+        <div class="nav-actions">
+          <!-- Let’s connect now correctly scrolls to Contact section at bottom -->
+          <a href="#contact" class="nav-ghost">Let’s connect</a>
+          <!-- Download Resume button (expects the PDF in same path in repo) -->
+          <a href="Prashanth_Gowda_GR_CV.pdf" class="nav-cta" download>
+            Download Résumé
+          </a>
+        </div>
       </div>
     </header>
 
@@ -721,18 +750,19 @@
       <div class="card-inner hero-layout">
         <div class="hero-main">
           <div>
-            <div class="hero-role">Cloud & DevOps Engineer</div>
+            <div class="hero-role">Site Reliability &amp; DevOps Engineer</div>
             <h1 class="hero-name">Prashanth&nbsp;Gowda&nbsp;G&nbsp;R</h1>
             <p class="hero-tagline">
-              I design, automate, and operate high-availability infrastructure across AWS &amp; Azure —
-              with Kubernetes, GitLab CI/CD, and modern observability stacks at the core.
+              I design, automate, and maintain cloud infrastructure across AWS and Azure,
+              using Kubernetes, Terraform, GitLab CI/CD, and modern monitoring to deliver
+              reliable, scalable, and secure systems with 99.9%+ uptime.
             </p>
           </div>
 
           <div class="hero-badges">
             <span class="badge">
               <span class="badge-dot"></span>
-              5+ years · Cloud &amp; DevOps
+              5+ years · Cloud, SRE &amp; DevOps
             </span>
             <span class="badge">
               <span class="badge-dot"></span>
@@ -740,7 +770,7 @@
             </span>
             <span class="badge">
               <span class="badge-dot"></span>
-              GitLab · Terraform · Ansible
+              Terraform · GitLab CI/CD · Automation
             </span>
           </div>
 
@@ -749,13 +779,14 @@
               <span class="btn-icon">⬇</span>
               View my experience
             </a>
+            <!-- Also scrolls to contact section now -->
             <a href="#contact" class="btn btn-ghost">
               <span class="btn-icon">✉</span>
               Contact me
             </a>
           </div>
 
-          <div class="hero-contact" id="contact">
+          <div class="hero-contact" id="contact-hero">
             <div class="contact-item">
               <span class="contact-label">Email</span>
               <a href="mailto:Prashanthgowda603@gmail.com" class="contact-link">
@@ -772,7 +803,7 @@
             </div>
             <div class="contact-item">
               <span class="contact-label">LinkedIn</span>
-              <a href="https://linkedin.com/in/prashanthgowdagr" target="_blank" rel="noreferrer"
+              <a href="https://www.linkedin.com/in/prashanthgowdagr" target="_blank" rel="noreferrer"
                  class="contact-link">
                 linkedin.com/in/prashanthgowdagr
               </a>
@@ -783,8 +814,8 @@
         <aside class="hero-side">
           <div class="stats-grid">
             <div class="stat-pill">
-              <div class="stat-label">Availability</div>
-              <div class="stat-value">SRE / DevOps roles</div>
+              <div class="stat-label">Role focus</div>
+              <div class="stat-value">SRE / DevOps / Platform</div>
             </div>
             <div class="stat-pill">
               <div class="stat-label">Current role</div>
@@ -801,8 +832,10 @@
           </div>
 
           <div class="hero-tag-card">
-            <strong>What I enjoy:</strong> building resilient infra-as-code, simplifying release
-            pipelines, centralizing logs/metrics, and turning manual ops into reliable automation.
+            <strong>How I work:</strong> I use DevOps and SRE principles to bridge development
+            and operations, implementing scalable cloud architectures, proactive monitoring,
+            and secure automation workflows so teams can deploy faster, recover quicker,
+            and scale smarter.
           </div>
         </aside>
       </div>
@@ -816,8 +849,8 @@
             <div class="card-eyebrow">Experience</div>
             <h2 class="card-title">Operational excellence across cloud &amp; platforms</h2>
             <p class="card-subtitle">
-              From high-availability infra to CI/CD and logging, I own the full lifecycle of modern
-              cloud workloads.
+              Designing, automating, and supporting AWS &amp; Azure infrastructure with a strong focus
+              on uptime, observability, and release reliability.
             </p>
           </div>
           <div class="pill">
@@ -827,57 +860,92 @@
         </div>
 
         <div class="timeline">
-          <!-- PowerSchool -->
+          <!-- PowerSchool - Engineer 1 -->
           <article class="timeline-item">
             <div class="timeline-node"></div>
-            <div class="timeline-role">Engineer I</div>
-            <div class="timeline-org">PowerSchool · Bangalore</div>
-            <div class="timeline-meta">June 2022 &mdash; Present</div>
+            <div class="timeline-role">Engineer I &mdash; Site Reliability &amp; DevOps</div>
+            <div class="timeline-org">PowerSchool · Bengaluru, India</div>
+            <div class="timeline-meta">April 2025 &mdash; Present</div>
             <ul class="timeline-points">
               <li>
-                Built and operated high-availability infrastructure for <strong>50+ production servers</strong>
-                using AWS Systems Manager &amp; Fleet Manager, achieving <strong>99.9% uptime</strong>.
+                Manage and support cloud and on-prem deployments across AWS, Azure, and Kubernetes,
+                ensuring stable, repeatable releases for core education products.
               </li>
               <li>
-                Designed GitLab CI pipelines with lightweight Docker images to automate daily
-                operational workflows and deployments.
+                Own and evolve GitLab CI/CD pipelines so that builds, tests, and deployments are
+                predictable and fully automated across environments.
               </li>
               <li>
-                Centralized logs from multi-source workloads into a <strong>Kibana/ELK</strong> stack,
-                dramatically improving troubleshooting for prod &amp; dev applications.
+                Use Terraform to provision and maintain infrastructure-as-code, keeping environments
+                consistent and auditable.
               </li>
               <li>
-                Deployed applications to Kubernetes clusters via <strong>Ansible + Argo CD</strong>,
-                maintaining zero-downtime rolling releases.
+                Monitor production workloads with New Relic, CloudWatch, and internal alerting tools
+                to maintain 99.9%+ uptime and fast incident response.
               </li>
               <li>
-                Led migration from self-hosted GitLab to SaaS for <strong>200+ developers</strong>,
-                planning and executing a zero-downtime cutover.
+                Collaborate with development and support teams to smooth product rollouts and reduce
+                operational toil via automation and better runbooks.
+              </li>
+            </ul>
+          </article>
+
+          <!-- PowerSchool - Associate Engineer 2 -->
+          <article class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-role">Associate Engineer II · DevOps &amp; Automation</div>
+            <div class="timeline-org">PowerSchool</div>
+            <div class="timeline-meta">April 2024 &mdash; April 2025</div>
+            <ul class="timeline-points">
+              <li>
+                Contributed to Terraform and Ansible configurations to standardize cloud infra
+                deployments across AWS and Azure.
               </li>
               <li>
-                Tuned advanced <strong>NGINX</strong> load balancers and automated SSL management,
-                cutting latency by ~<strong>20%</strong>.
+                Helped integrate Freshservice with Salesforce and Microsoft 365 using Azure Logic Apps,
+                simplifying approvals and workflow automation.
               </li>
               <li>
-                Automated database refresh workflows for dev/QA, reducing import time by
-                <strong>40%</strong>.
+                Supported an AWS Lex chatbot initiative by testing Lambda, Kendra, and S3 integrations
+                for internal ticket automation and knowledge retrieval.
               </li>
               <li>
-                Authored infrastructure-as-code with <strong>Terraform &amp; Terragrunt</strong> on AWS
-                to standardize and version infra with <strong>100% consistency</strong>.
+                Participated in the migration of GitLab from on-prem to SaaS, ensuring pipelines and
+                projects moved with minimal disruption.
               </li>
               <li>
-                Engineered ETL pipelines using <strong>Qlik &amp; HVR</strong> into Snowflake with
-                <strong>99.9% data replication accuracy</strong>.
+                Assisted with maintaining CI/CD workflows and troubleshooting build/deployment issues
+                across dev, QA, and production.
+              </li>
+            </ul>
+          </article>
+
+          <!-- PowerSchool - Associate Engineer 1 -->
+          <article class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-role">Associate Engineer I · Cloud Operations</div>
+            <div class="timeline-org">PowerSchool</div>
+            <div class="timeline-meta">May 2022 &mdash; December 2024</div>
+            <ul class="timeline-points">
+              <li>
+                Supported day-to-day operations of AWS and Azure infrastructure, including provisioning
+                and environment setup for development and testing teams.
               </li>
               <li>
-                Implemented centralized logging via <strong>Ansible AWX</strong> for 100+ VMs across
-                AWS &amp; Azure, and built RPA flows with <strong>Power Automate</strong> to cut
-                manual ops by 40%.
+                Helped maintain CI/CD pipelines in Jenkins and GitLab, keeping build and deployment
+                cycles smooth and reliable.
               </li>
               <li>
-                Troubleshoot incidents across dev, staging, and production on both
-                <strong>Windows</strong> and <strong>Ubuntu Linux</strong> environments.
+                Monitored system health using New Relic and CloudWatch, contributing to early detection
+                and resolution of performance issues.
+              </li>
+              <li>
+                Wrote shell and Python scripts to automate repetitive operational tasks, reducing manual
+                work for the team.
+              </li>
+              <li>
+                Learned and applied Terraform, Linux, and Ansible on real automation use cases under
+                guidance from senior engineers.
               </li>
             </ul>
           </article>
@@ -886,31 +954,42 @@
           <article class="timeline-item">
             <div class="timeline-node"></div>
             <div class="timeline-role">Associate System Engineer</div>
-            <div class="timeline-org">Anthology</div>
+            <div class="timeline-org">Anthology Inc · India</div>
             <div class="timeline-meta">June 2021 &mdash; May 2022</div>
             <ul class="timeline-points">
               <li>
-                Implemented an enterprise-wide logging solution using
-                <strong>Azure Blob Storage</strong> &amp; <strong>Azure Monitor</strong>.
+                Managed and maintained Windows servers to ensure stability, security, and optimal performance
+                for enterprise applications.
               </li>
               <li>
-                Managed application deployments to <strong>Azure App Services</strong> and on-prem
-                <strong>IIS</strong> workloads.
+                Configured and applied SSL certificates in IIS Server Manager, securing web apps and
+                improving encryption standards.
               </li>
               <li>
-                Automated SQL maintenance jobs, cutting manual DB operations by
-                <strong>~40%</strong>.
+                Used Azure Storage Explorer to extract and analyze logs for troubleshooting server and
+                application issues efficiently.
               </li>
               <li>
-                Orchestrated <strong>Ansible</strong> playbooks to standardize software deployments
-                across cloud and on-prem fleets.
+                Optimized database performance by cleaning up databases, managing permissions, and resolving
+                DB-related issues to maintain integrity.
               </li>
               <li>
-                Owned SSL certificate lifecycle and automated renewals for
-                <strong>50+ applications</strong>.
+                Collaborated with cross-functional teams on product quality, test processes, and reliability
+                improvements, and provided technical support to system users.
               </li>
+            </ul>
+          </article>
+
+          <!-- Apponix -->
+          <article class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-role">Trainee &mdash; Cloud &amp; Infrastructure</div>
+            <div class="timeline-org">Apponix Technologies · Bengaluru, India</div>
+            <div class="timeline-meta">December 2020 &mdash; May 2021</div>
+            <ul class="timeline-points">
               <li>
-                Provided operational support across multiple Linux VMs and Azure-hosted services.
+                Completed hands-on training focused on foundational cloud, Windows Server, and DevOps skills,
+                preparing for entry into SRE/DevOps roles.
               </li>
             </ul>
           </article>
@@ -957,7 +1036,7 @@
               <div class="pill-row">
                 <span class="tag tag-strong">Terraform</span>
                 <span class="tag">Terragrunt</span>
-                <span class="tag">Ansible AWX</span>
+                <span class="tag">Ansible / Ansible AWX</span>
               </div>
             </div>
 
@@ -973,10 +1052,11 @@
             <div>
               <div class="pill-group-label">Observability &amp; logging</div>
               <div class="pill-row">
-                <span class="tag tag-strong">ELK / Kibana</span>
+                <span class="tag tag-strong">New Relic</span>
+                <span class="tag tag-strong">CloudWatch</span>
+                <span class="tag">ELK / Kibana</span>
                 <span class="tag">Prometheus</span>
                 <span class="tag">Grafana</span>
-                <span class="tag">New Relic</span>
                 <span class="tag">Azure Monitor</span>
               </div>
             </div>
@@ -1020,7 +1100,8 @@
               <div class="pill-row">
                 <span class="tag">Production incident response</span>
                 <span class="tag">Release engineering</span>
-                <span class="tag">Infra reviews &amp; design</span>
+                <span class="tag">Infra design &amp; reviews</span>
+                <span class="tag">SRE &amp; DevOps practices</span>
               </div>
             </div>
           </div>
@@ -1036,7 +1117,7 @@
             <div class="card-eyebrow">Selected work</div>
             <h2 class="card-title">Projects that showcase my approach</h2>
             <p class="card-subtitle">
-              A mix of platform engineering, automation, and AI-assisted operations.
+              A mix of platform engineering, automation, observability, and AI-assisted operations.
             </p>
           </div>
         </div>
@@ -1047,7 +1128,7 @@
             <div class="project-meta">AWS Lex · Kendra · Lambda · Freshservice API · Bedrock (Claude)</div>
             <p class="project-body">
               Built a personalized chatbot that connects to Confluence, SharePoint, S3, websites, and
-              Freshservice. AWS Lex handles the conversation; Kendra and Lambda retrieve content from
+              Freshservice. AWS Lex handles conversations; Kendra and Lambda retrieve content from
               multiple sources; and Claude on Bedrock summarizes and simplifies responses for end users.
               This reduced ticket creation friction and made internal knowledge instantly discoverable.
             </p>
@@ -1057,10 +1138,9 @@
             <div class="project-title">End-to-end CI/CD for Containerized Apps</div>
             <div class="project-meta">Jenkins · GitLab · Docker · Kubernetes · Grafana</div>
             <p class="project-body">
-              Integrated Jenkins, GitLab, Docker, and Kubernetes to build a robust CI/CD pipeline
-              for production, QA, and dev environments. Automated build, test, and deploy stages,
-              and wired them into Grafana dashboards for live deployment health and performance
-              visibility.
+              Integrated Jenkins, GitLab, Docker, and Kubernetes to build a robust CI/CD pipeline for
+              production, QA, and dev environments. Automated build, test, and deploy stages, and wired
+              them into Grafana dashboards for live deployment health and performance visibility.
             </p>
           </article>
         </div>
@@ -1076,15 +1156,16 @@
               <div class="card-eyebrow">Education</div>
               <h2 class="card-title">Foundations</h2>
               <p class="card-subtitle">
-                Electrical &amp; Electronics engineering background with a strong pivot into Cloud and DevOps.
+                Electrical &amp; Electronics engineering background with a strong pivot into Cloud,
+                SRE, and DevOps.
               </p>
             </div>
           </div>
 
           <div class="section-body">
-            <p><strong>SJBIT (VTU)</strong></p>
-            <p>B.E in Electrical &amp; Electronics Engineering</p>
-            <p>CGPA: 7 &nbsp;·&nbsp; 2018 &mdash; 2020</p>
+            <p><strong>Visvesvaraya Technological University (SJBIT)</strong></p>
+            <p>Bachelor of Engineering &mdash; Electrical and Electronics Engineering</p>
+            <p>2017 &mdash; 2020</p>
           </div>
         </div>
 
@@ -1100,25 +1181,31 @@
             <li>
               <span class="bullet-dot"></span>
               <span>
-                <span class="cert-label">Docker and Kubernetes Administration</span> &mdash; Udemy
+                <span class="cert-label">Introduction to Artificial Intelligence</span> &mdash; Udemy
               </span>
             </li>
             <li>
               <span class="bullet-dot"></span>
               <span>
-                <span class="cert-label">Advanced Ansible Automation</span> &mdash; Udemy
+                <span class="cert-label">Kubernetes for the Absolute Beginners &mdash; Hands-on</span> &mdash; Udemy
               </span>
             </li>
             <li>
               <span class="bullet-dot"></span>
               <span>
-                <span class="cert-label">GitLab Hands-on</span> &mdash; Udemy
+                <span class="cert-label">GitLab CI &mdash; Complete Hands-On for CI/CD &amp; DevOps</span> &mdash; Udemy
               </span>
             </li>
             <li>
               <span class="bullet-dot"></span>
               <span>
-                <span class="cert-label">Microsoft Artificial Intelligence &amp; Prompt Engineering</span> &mdash; Udemy
+                <span class="cert-label">Understanding APIs and RESTful APIs</span> &mdash; Crash Course
+              </span>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <span>
+                <span class="cert-label">Prepare for MCSA: Windows Server 2016 (70-740, 70-741, 70-742)</span>
               </span>
             </li>
           </ul>
@@ -1127,7 +1214,7 @@
     </section>
 
     <!-- CLOSING / CONTACT -->
-    <section class="card" id="cta">
+    <section class="card" id="contact">
       <div class="card-inner two-col">
         <div>
           <div class="card-header">
@@ -1144,19 +1231,19 @@
           <ul class="list">
             <li>
               <span class="bullet-dot"></span>
-              <span>Designing &amp; reviewing cloud architectures on AWS and Azure</span>
+              <span>Designing &amp; reviewing cloud architectures on AWS and Azure.</span>
             </li>
             <li>
               <span class="bullet-dot"></span>
-              <span>Implementing GitLab- or Jenkins-based CI/CD for containerized workloads</span>
+              <span>Implementing GitLab- or Jenkins-based CI/CD for containerized workloads.</span>
             </li>
             <li>
               <span class="bullet-dot"></span>
-              <span>Centralizing logging, metrics, and tracing for faster incident response</span>
+              <span>Centralizing logging, metrics, and alerting for faster incident response.</span>
             </li>
             <li>
               <span class="bullet-dot"></span>
-              <span>Automating repetitive runbooks using Python, Bash, and Power Automate</span>
+              <span>Automating repetitive runbooks with Python, Bash, and Power Automate.</span>
             </li>
           </ul>
         </div>
@@ -1178,7 +1265,7 @@
             </p>
             <p>
               LinkedIn:
-              <a class="contact-link" href="https://linkedin.com/in/prashanthgowdagr" target="_blank" rel="noreferrer">
+              <a class="contact-link" href="https://www.linkedin.com/in/prashanthgowdagr" target="_blank" rel="noreferrer">
                 linkedin.com/in/prashanthgowdagr
               </a>
             </p>
@@ -1195,7 +1282,7 @@
     </section>
 
     <footer class="footer-note">
-      Built as a static HTML portfolio inspired by Gamma&apos;s card-first layouts and themes.
+      Built as a static HTML portfolio inspired by Gamma&apos;s card-first layouts and ocean-blue themes.
     </footer>
   </div>
 </body>
