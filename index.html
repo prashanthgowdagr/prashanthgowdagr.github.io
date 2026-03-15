@@ -637,6 +637,19 @@
       color: var(--text-main);
     }
 
+    .nested-roles {
+      margin-top: 1rem;
+      border-left: 1px solid rgba(148, 163, 184, 0.2);
+      padding-left: 1.2rem;
+      margin-left: -0.2rem;
+    }
+    .nested-role {
+      margin-bottom: 1.5rem;
+    }
+    .nested-role:last-child {
+      margin-bottom: 0.5rem;
+    }
+
     /* Skills grid */
     .pill-section {
       display: grid;
@@ -993,94 +1006,97 @@
         </div>
 
         <div class="timeline">
-          <!-- PowerSchool - Engineer 1 -->
+          <!-- PowerSchool - Experience Group -->
           <article class="timeline-item">
             <div class="timeline-node"></div>
-            <div class="timeline-role">Engineer I &mdash; Site Reliability &amp; DevOps</div>
-            <div class="timeline-org">PowerSchool</div>
-            <div class="timeline-meta">April 2025 &mdash; Present</div>
-            <ul class="timeline-points">
-              <li>
-                Manage and support cloud and on-prem deployments across AWS, Azure, and Kubernetes,
-                ensuring stable, repeatable releases for core education products.
-              </li>
-              <li>
-                Own and evolve GitLab CI/CD pipelines so that builds, tests, and deployments are
-                predictable and fully automated across environments.
-              </li>
-              <li>
-                Use Terraform to provision and maintain infrastructure-as-code, keeping environments
-                consistent and auditable.
-              </li>
-              <li>
-                Monitor production workloads with New Relic, CloudWatch, and internal alerting tools
-                to maintain 99.9%+ uptime and fast incident response.
-              </li>
-              <li>
-                Collaborate with development and support teams to smooth product rollouts and reduce
-                operational toil via automation and better runbooks.
-              </li>
-            </ul>
-          </article>
+            <div class="timeline-org" style="font-size: 1.1rem; color: #f1f5f9;">PowerSchool</div>
+            <div class="timeline-meta">May 2022 &mdash; Present</div>
+            
+            <div class="nested-roles">
+              <!-- Role 1 -->
+              <div class="nested-role">
+                <div class="timeline-role">Engineer I &mdash; Site Reliability &amp; DevOps</div>
+                <div class="timeline-meta">April 2025 &mdash; Present</div>
+                <ul class="timeline-points">
+                  <li>
+                    Manage and support cloud and on-prem deployments across AWS, Azure, and Kubernetes,
+                    ensuring stable, repeatable releases for core education products.
+                  </li>
+                  <li>
+                    Own and evolve GitLab CI/CD pipelines so that builds, tests, and deployments are
+                    predictable and fully automated across environments.
+                  </li>
+                  <li>
+                    Use Terraform to provision and maintain infrastructure-as-code, keeping environments
+                    consistent and auditable.
+                  </li>
+                  <li>
+                    Monitor production workloads with New Relic, CloudWatch, and internal alerting tools
+                    to maintain 99.9%+ uptime and fast incident response.
+                  </li>
+                  <li>
+                    Collaborate with development and support teams to smooth product rollouts and reduce
+                    operational toil via automation and better runbooks.
+                  </li>
+                </ul>
+              </div>
 
-          <!-- PowerSchool - Associate Engineer 2 -->
-          <article class="timeline-item">
-            <div class="timeline-node"></div>
-            <div class="timeline-role">Associate Engineer II · DevOps &amp; Automation</div>
-            <div class="timeline-org">PowerSchool</div>
-            <div class="timeline-meta">April 2024 &mdash; March 2025</div>
-            <ul class="timeline-points">
-              <li>
-                Contributed to Terraform and Ansible configurations to standardize cloud infra
-                deployments across AWS and Azure.
-              </li>
-              <li>
-                Helped integrate Freshservice with Salesforce and Microsoft 365 using Azure Logic Apps,
-                simplifying approvals and workflow automation.
-              </li>
-              <li>
-                Supported an AWS Lex chatbot initiative by testing Lambda, Kendra, and S3 integrations
-                for internal ticket automation and knowledge retrieval.
-              </li>
-              <li>
-                Participated in the migration of GitLab from on-prem to SaaS, ensuring pipelines and
-                projects moved with minimal disruption.
-              </li>
-              <li>
-                Assisted with maintaining CI/CD workflows and troubleshooting build/deployment issues
-                across dev, QA, and production.
-              </li>
-            </ul>
-          </article>
+              <!-- Role 2 -->
+              <div class="nested-role">
+                <div class="timeline-role">Associate Engineer II · DevOps &amp; Automation</div>
+                <div class="timeline-meta">April 2024 &mdash; March 2025</div>
+                <ul class="timeline-points">
+                  <li>
+                    Contributed to Terraform and Ansible configurations to standardize cloud infra
+                    deployments across AWS and Azure.
+                  </li>
+                  <li>
+                    Helped integrate Freshservice with Salesforce and Microsoft 365 using Azure Logic Apps,
+                    simplifying approvals and workflow automation.
+                  </li>
+                  <li>
+                    Supported an AWS Lex chatbot initiative by testing Lambda, Kendra, and S3 integrations
+                    for internal ticket automation and knowledge retrieval.
+                  </li>
+                  <li>
+                    Participated in the migration of GitLab from on-prem to SaaS, ensuring pipelines and
+                    projects moved with minimal disruption.
+                  </li>
+                  <li>
+                    Assisted with maintaining CI/CD workflows and troubleshooting build/deployment issues
+                    across dev, QA, and production.
+                  </li>
+                </ul>
+              </div>
 
-          <!-- PowerSchool - Associate Engineer 1 -->
-          <article class="timeline-item">
-            <div class="timeline-node"></div>
-            <div class="timeline-role">Associate Engineer I · Cloud Operations</div>
-            <div class="timeline-org">PowerSchool</div>
-            <div class="timeline-meta">May 2022 &mdash; March 2024</div>
-            <ul class="timeline-points">
-              <li>
-                Supported day-to-day operations of AWS and Azure infrastructure, including provisioning
-                and environment setup for development and testing teams.
-              </li>
-              <li>
-                Helped maintain CI/CD pipelines in Jenkins and GitLab, keeping build and deployment
-                cycles smooth and reliable.
-              </li>
-              <li>
-                Monitored system health using New Relic and CloudWatch, contributing to early detection
-                and resolution of performance issues.
-              </li>
-              <li>
-                Wrote shell and Python scripts to automate repetitive operational tasks, reducing manual
-                work for the team.
-              </li>
-              <li>
-                Learned and applied Terraform, Linux, and Ansible on real automation use cases under
-                guidance from senior engineers.
-              </li>
-            </ul>
+              <!-- Role 3 -->
+              <div class="nested-role">
+                <div class="timeline-role">Associate Engineer I · Cloud Operations</div>
+                <div class="timeline-meta">May 2022 &mdash; March 2024</div>
+                <ul class="timeline-points">
+                  <li>
+                    Supported day-to-day operations of AWS and Azure infrastructure, including provisioning
+                    and environment setup for development and testing teams.
+                  </li>
+                  <li>
+                    Helped maintain CI/CD pipelines in Jenkins and GitLab, keeping build and deployment
+                    cycles smooth and reliable.
+                  </li>
+                  <li>
+                    Monitored system health using New Relic and CloudWatch, contributing to early detection
+                    and resolution of performance issues.
+                  </li>
+                  <li>
+                    Wrote shell and Python scripts to automate repetitive operational tasks, reducing manual
+                    work for the team.
+                  </li>
+                  <li>
+                    Learned and applied Terraform, Linux, and Ansible on real automation use cases under
+                    guidance from senior engineers.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </article>
 
           <!-- Anthology -->
